@@ -1,8 +1,8 @@
 SUMMARY = "gSSO daemon"
 DESCRIPTION = "GLib-based Single Sign-On daemon"
 
-DEPENDS = "glib-2.0 sqlite3 smack ecryptfs-utils"
-RDEPENDS_${PN} = "glib-2.0 sqlite3 ecryptfs-utils"
+DEPENDS = "glib-2.0 sqlite3 smack ecryptfs-utils trousers"
+RDEPENDS_${PN} = "glib-2.0 sqlite3 ecryptfs-utils trousers"
 
 LICENSE = "LGPLv2.1+"
 LIC_FILES_CHKSUM = "file://COPYING.LIB;md5=4fbd65380cdd255951079008b364516c"
@@ -13,7 +13,7 @@ EXTRA_OECONF = "--enable-dbus-type=p2p"
 #EXTRA_OECONF_append = " --enable-keychain=XXX"
 
 SRC_URI = "git://gitlab.com/accounts-sso/gsignond.git;protocol=https"
-SRCREV = "b12650ac5b6dd64d9fa59cb01b497eb0a181ec53"
+SRCREV = "077e1d9ef5359e61d8e18724367039f539524467"
 
 S = "${WORKDIR}/git"
 

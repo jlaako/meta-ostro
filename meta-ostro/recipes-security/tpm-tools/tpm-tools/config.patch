@@ -1,0 +1,30 @@
+diff --git a/Makefile.am b/Makefile.am
+index 78c8676..11c9a8e 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -21,11 +21,9 @@
+ #       http://www.opensource.org/licenses/cpl1.0.php.
+ #
+ 
+-SUBDIRS		= 	m4  	\
+-			include \
++SUBDIRS		= 	include \
+ 			lib	\
+ 			src	\
+-			po	\
+ 			man
+ 
+ ACLOCAL_AMFLAGS = -I m4
+diff --git a/configure.in b/configure.in
+index a6ae4f5..67dd350 100644
+--- a/configure.in
++++ b/configure.in
+@@ -141,8 +141,6 @@ AC_TYPE_UID_T
+ CFLAGS="$CFLAGS -Wall -Wreturn-type -Wsign-compare"
+ 
+ AC_CONFIG_FILES(Makefile		\
+-		po/Makefile.in		\
+-		m4/Makefile		\
+ 		include/Makefile	\
+ 		lib/Makefile		\
+ 		src/Makefile		\
